@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="./main.js"></script>
     <title>Mi primera pagina WEB</title>
 </head>
 <body>
@@ -21,6 +23,7 @@
     </ul>
     </nav>
 </header>
+
 <div class="presentacion" id="inicio">
     <h1>BIENVENID@S</h1>
     <p>"Este es un ejemplo de un Sitio Web primerizo donde la creatividad no conoce límites. ¡A liberar la imaginación y explorar posibilidades infinitas!"</p>
@@ -55,11 +58,90 @@
         <p>Aqui hacemos uso de IFRAME con YOUTUBE</p> 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/RXKabdUBiWM?si=bpXS7pVwJ68UMqmG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+<!-- Esta es la manera de poner comentarios en VS Code -->
+    <!-- Aqui comienza Bootstrap con JavaScript -->
+    <div class="container-sm bg-primary">
+        <p class="text-white">Aqui comienza el uso de Bootstrap5 a continuación el ejemplo de los Containers: -Container (-sm -md -lg -xl -xxl). Which sets a max-width at each responsive breakpoint. puede usar los distintos valores que hay en la siguiente tabla, para que nuestra página se ajuste a las resoluciones de distinto dispositivos (Tablet, celular, computadora, etc.)</p>
+        </div>
+        <div class="container-md bg-warning">
+            <p class="text-white">Aqui comienza el uso de Bootstrap5 a continuación el ejemplo de los Containers: -Container (-sm -md -lg -xl -xxl). Which sets a max-width at each responsive breakpoint. puede usar los distintos valores que hay en la siguiente tabla, para que nuestra página se ajuste a las resoluciones de distinto dispositivos (Tablet, celular, computadora, etc.)</p>
+            </div>
+        <div class="container-lg bg-success">
+            <p class="text-white">Aqui comienza el uso de Bootstrap5 a continuación el ejemplo de los Containers: -Container (-sm -md -lg -xl -xxl). Which sets a max-width at each responsive breakpoint. puede usar los distintos valores que hay en la siguiente tabla, para que nuestra página se ajuste a las resoluciones de distinto dispositivos (Tablet, celular, computadora, etc.)</p>
+        </div>
+        <div class="container-xl bg-danger">
+            <p class="text-white">Aqui comienza el uso de Bootstrap5 a continuación el ejemplo de los Containers: -Container (-sm -md -lg -xl -xxl). Which sets a max-width at each responsive breakpoint. puede usar los distintos valores que hay en la siguiente tabla, para que nuestra página se ajuste a las resoluciones de distinto dispositivos (Tablet, celular, computadora, etc.)</p>
+            </div>
+        <div class="container-fluid bg-success">
+            <p class="text-dark">Y el -Container -fluid. Which is width: 100% at all breakpoints. Va a adaptarse al 100% de todas las pantallas (independientemente de su resolución).</p>
+            </div>
+
+    <div class="cotainer">
+        <div class="row">
+            <div class="col-md-8 bg-info">
+                <h1>PROPUESTA EDUCATIVA</h1>
+            </div>
+            <div class="col-md-4">
+                <img src="./imagenes/imagenheader.png" alt="logo">
+            </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/carrusel1.jpg" class="d-block w-100" alt="imgcar1">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/carrusel2.png" class="d-block w-100" alt="imgcar2">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/carrusel3.jpg" class="d-block w-100" alt="imgcar3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <div class="row">
+            <div class="col-md-4 bg-danger">
+                <h1>COLUMNA 1</h1>
+                <div id="columna1">
+                <p> Parrafo 1. Las grillas son cuadriculas para crear diseños de todas las formas y tamaños gracias a un sistema de 12 columnas y seis niveles responsive. Es un tema importante ya que nos ayuda a organizar los contenidos de nuestros elementos. Para llegar a implementar las grillas, es importante que previamente tengas claro como usas las clases tanto en el módulo de CSS como las predeterminadas por Bootstrap. </p>
+                </div>
+                <button onclick='muestra_oculta ("columna1")' class="btn btn-primary" form="contenido">+</button>
+                <img src="./imagenes/imagen1.png" alt="img1">
+            </div>
+            <div class="col-md-4 bg-warning">
+                <h1>COLUMNA 2</h1>
+                <div id="columna2">
+                <p> Parrafo 2. Las grillas son cuadriculas para crear diseños de todas las formas y tamaños gracias a un sistema de 12 columnas y seis niveles responsive. Es un tema importante ya que nos ayuda a organizar los contenidos de nuestros elementos. Para llegar a implementar las grillas, es importante que previamente tengas claro como usas las clases tanto en el módulo de CSS como las predeterminadas por Bootstrap. </p>
+                </div>
+                <button onclick='muestra_oculta ("columna2")' class="btn btn-primary" form="contenido">+</button>
+                <img src="./imagenes/imagen2.png" alt="img2">
+            </div>
+
+            <div class="col-md-4 bg-success">
+                <h1>COLUMNA 3</h1>
+                <div id="columna3">
+                <p> Parrafo 3. Las grillas son cuadriculas para crear diseños de todas las formas y tamaños gracias a un sistema de 12 columnas y seis niveles responsive. Es un tema importante ya que nos ayuda a organizar los contenidos de nuestros elementos. Para llegar a implementar las grillas, es importante que previamente tengas claro como usas las clases tanto en el módulo de CSS como las predeterminadas por Bootstrap. </p>
+                </div>
+                <button onclick='muestra_oculta ("columna3")' class="btn btn-primary" form="contenido">+</button>
+                <img src="./imagenes/imagen3.png" alt="img3">
+            </div>
+        </div>
+    </div>
     
     <div class="footer">
     <footer>
         <p>Aqui se encuentra el pie de pagina. ©1995-2024 Todos los derechos reservados.</p>
     </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
